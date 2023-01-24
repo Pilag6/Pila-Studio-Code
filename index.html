@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title-->
+        <title>Pila Code Editor</title>
+        <meta name="description" content="Descripción" />
+
+        <!-- Stylesheets CSS-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!------------ Google Font ---------->
+
+        <!----------- Font Awesome ---------->
+        <script
+            src="https://kit.fontawesome.com/4ce5221f73.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <nav>
+            <i class="fa-solid fa-dragon"></i>
+            <h1>Pila Studio Code</h1>
+        </nav>
+
+        <div class="container">
+            <div class="left-column">
+                <!-- HTML -->
+                <div class="left-column__label">
+                    <label> <i class="fa-brands fa-html5"></i> HTML </label>
+
+                    <div class="label--settings">
+                        <i class="fa-solid fa-gear"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <textarea id="html-code" onkeyup="run()"></textarea>
+
+                <!-- CSS -->
+                <div class="left-column__label">
+                    <label> <i class="fa-brands fa-css3-alt"></i> CSS </label>
+
+                    <div class="label--settings">
+                        <i class="fa-solid fa-gear"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <textarea id="css-code" onkeyup="run()"></textarea>
+
+                <!-- JAVASCRIPT -->
+                <div class="left-column__label">
+                    <label>
+                        <i class="fa-brands fa-square-js"></i> JAVASCRIPT
+                    </label>
+
+                    <div class="label--settings">
+                        <i class="fa-solid fa-gear"></i>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <textarea id="js-code" onkeyup="run()"></textarea>
+            </div>
+
+            <div class="right-column">
+                <label><i class="fa-solid fa-play"></i> OUTPUT</label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+        <!-- JavaScript-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
